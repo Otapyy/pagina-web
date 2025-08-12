@@ -1,6 +1,11 @@
-a = document.getElementById("1")
-b = document.getElementById("2")
+a = document.getElementById("1");
+b = document.getElementById("2");
 
-b.addActionListener("click", function(){a.innerHTML = "DEF";})
+a.innerHTML = "DEF";
 
-a.innerHTML = "DEF"
+function consoletome(){
+    console.log("AaaaaAAaaaA");
+}
+
+b.addActionListener("click", consoletome);
+
