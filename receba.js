@@ -1,11 +1,9 @@
-a = document.getElementById("1");
-b = document.getElementById("2");
+titleABC = document.getElementById("1");
+buttonAlterar = document.getElementById("2");
 
-a.innerHTML = "DEF";
-
-function consoletome(){
-    console.log("AaaaaAAaaaA");
+function alterarTitle() {
+    titleABC.innerHTML = "DEF";
 }
 
-b.addActionListener("click", consoletome);
+b.addEventListener("click", alterarTitle);
 
