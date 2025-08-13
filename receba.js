@@ -39,3 +39,12 @@ console.log(valorDado[0]);
 console.log(valorDado[1]);
 console.log(valorDado[2]);
 }
+
+fetch("https://dadosabertos.camara.leg.br/api/v2/deputados/209787")
+  .then(res => res.json())
+  .then(data => {
+     localStorage.setItem('id', data.dados.cpf)
+
+  })    
+
+ 
