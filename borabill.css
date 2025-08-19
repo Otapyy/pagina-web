@@ -1,0 +1,12 @@
+.divLogin {
+    display: grid;
+   place-items: center;
+
+
+}
+
+.button:hover {
+    transform: scale(0.95);
+    transition: 0.25s;
+
+}
