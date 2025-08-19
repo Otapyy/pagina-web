@@ -1,15 +1,15 @@
 const titleLogin = document.getElementById("titleLogin");
 const taEmailLogin = document.getElementById("taEmailLogin");
 const taSenhaLogin = document.getElementById("taSenhaLogin");
-const btnConfirm = document.getElementById("buttonConfirm");
+const btnConfirm = document.getElementById("btnConfirm");
 
-btnConfirm.addEventListener()
+function getValueInputText(){
+    localStorage.setItem("Nome", taEmailLogin.value)
+    localStorage.setItem("Senha", taSenhaLogin.value)
 
+    taEmailLogin.value = null;
+    taSenhaLogin.value = null;
 
-fetch("https://dadosabertos.camara.leg.br/api/v2/deputados/209787")
-  .then(res => res.json())
-  .then(data => {
-     localStorage.setItem('id', data.dados.cpf)
+}
 
-  })   
-  
+btnConfirm.addEventListener('click', getValueInputText);
